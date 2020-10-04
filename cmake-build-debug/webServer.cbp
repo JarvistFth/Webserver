@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="webServer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jarvist/CLionProjects/webServer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jarvist/CLionProjects/webServer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webServer">
+				<Option output="/home/jarvist/CLionProjects/webServer/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jarvist/CLionProjects/webServer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Base"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Log"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Utils"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Http"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/EventLoop"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Tcp"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Timer"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 webServer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webServer/fast">
+				<Option output="/home/jarvist/CLionProjects/webServer/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jarvist/CLionProjects/webServer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Base"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Log"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Utils"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Http"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/EventLoop"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Tcp"/>
+					<Add directory="/home/jarvist/CLionProjects/webServer/Timer"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 webServer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jarvist/CLionProjects/webServer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jarvist/CLionProjects/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/Buffer.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/Buffer.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/Copyable.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/CountDownLatch.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/FixedBuffer.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/NonCopyable.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/Thread.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/Thread.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/ThreadPool.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/ThreadPool.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Base/Types.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Epoll/Channel.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Epoll/Channel.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Epoll/Epoller.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Epoll/Epoller.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/AsyncWaker.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/AsyncWaker.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/EventLoop.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/EventLoop.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/EventLoopThread.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/EventLoopThread.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/EventLoopThreadPool.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/EventLoop/EventLoopThreadPool.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpContext.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpContext.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpRequest.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpRequest.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpResponse.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpResponse.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpServer.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Http/HttpServer.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/AsyncLogging.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/AsyncLogging.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/FileUtils.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/FileUtils.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/LogFile.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/LogFile.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/LogStream.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/LogStream.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/Logger.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Log/Logger.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/Acceptor.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/Acceptor.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/INetAddress.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/INetAddress.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/Socket.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/Socket.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/SocketsOps.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/SocketsOps.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/TcpConnection.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/TcpConnection.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/TcpServer.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Tcp/TcpServer.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Timer/Timer.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Timer/Timer.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Timer/TimerManager.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Timer/TimerManager.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Utils/Callbacks.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Utils/TimeStamp.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/Utils/TimeStamp.h">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/main.cpp">
+			<Option target="webServer"/>
+		</Unit>
+		<Unit filename="/home/jarvist/CLionProjects/webServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -160,6 +160,9 @@ CMakeFiles/webServer.dir/Log/LogStream.cpp.o: ../Base/NonCopyable.h
 CMakeFiles/webServer.dir/Log/LogStream.cpp.o: ../Log/LogStream.cpp
 CMakeFiles/webServer.dir/Log/LogStream.cpp.o: ../Log/LogStream.h
 
+CMakeFiles/webServer.dir/Log/Logger.cpp.o: ../Base/CountDownLatch.h
+CMakeFiles/webServer.dir/Log/Logger.cpp.o: ../Base/FixedBuffer.h
+CMakeFiles/webServer.dir/Log/Logger.cpp.o: ../Base/NonCopyable.h
 CMakeFiles/webServer.dir/Log/Logger.cpp.o: ../Log/AsyncLogging.h
 CMakeFiles/webServer.dir/Log/Logger.cpp.o: ../Log/LogStream.h
 CMakeFiles/webServer.dir/Log/Logger.cpp.o: ../Log/Logger.cpp

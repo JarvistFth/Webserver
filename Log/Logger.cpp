@@ -42,7 +42,7 @@ void defaultFlush()
 {
     fflush(stdout);
 }
-Logger::OutputFunc g_output = defaultOutput;
+Logger::OutputFunc g_output = output;
 Logger::FlushFunc g_flush = defaultFlush;
 
 Logger::Logger(const char *filename, int line, LOG_LEVEL level):filename(filename),line(line),level(level) {

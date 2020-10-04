@@ -161,6 +161,9 @@ CMakeFiles/webServer.dir/Log/LogStream.cpp.o
  /home/jarvist/CLionProjects/webServer/Log/LogStream.cpp
  /home/jarvist/CLionProjects/webServer/Log/LogStream.h
 CMakeFiles/webServer.dir/Log/Logger.cpp.o
+ /home/jarvist/CLionProjects/webServer/Base/CountDownLatch.h
+ /home/jarvist/CLionProjects/webServer/Base/FixedBuffer.h
+ /home/jarvist/CLionProjects/webServer/Base/NonCopyable.h
  /home/jarvist/CLionProjects/webServer/Log/AsyncLogging.h
  /home/jarvist/CLionProjects/webServer/Log/LogStream.h
  /home/jarvist/CLionProjects/webServer/Log/Logger.cpp

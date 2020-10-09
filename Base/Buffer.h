@@ -322,8 +322,13 @@ public:
     ///
     /// It may implement with readv(2)
     /// @return result of read(2), @c errno is saved
+#ifdef USE_EPOLL_LT
     ssize_t readFd(int fd, int* savedErrno);
-
+    ssize_t writeFd(int fd, int * savedErrno);
+#else
+    ssize_t readFdET(int fd, int* savedErrno);
+    ssize_t writeFdET(int fd,int* savedErrno);
+#endif
 
 
     void swap(Buffer& rhs){

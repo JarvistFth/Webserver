@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.15)
 project(webServer)
 
 set(CMAKE_CXX_STANDARD 14)
+add_compile_definitions(USE_EPOLL_LT)
+add_compile_definitions(STD_LOGGING)
 
 include_directories(Base)
 include_directories(Log)

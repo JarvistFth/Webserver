@@ -5,6 +5,7 @@
 #include <Logger.h>
 #include "Epoller.h"
 #include <unistd.h>
+#include <TcpConnection.h>
 #include "Channel.h"
 #include "../EventLoop/EventLoop.h"
 
@@ -39,7 +40,7 @@ TimeStamp Epoller::poll(Epoller::ChannelList *channelList) {
         }
     }
     else if(nready == 0){
-        LOG_INFO<< " NOTHING HAPPENED";
+//        LOG_INFO<< " NOTHING HAPPENED";
     }else{
         if(savedErrno != EINTR){
             errno = savedErrno;
@@ -76,7 +77,7 @@ void Epoller::updateChannel(Channel *channel) {
         if(status == newFd){
             channels[fd] = channel;
         }else{
-            LOG_INFO<<"channel fd: "<< fd << " is deleted!! ";
+//            LOG_INFO<<"channel fd: "<< fd << " is deleted!! ";
         }
         channel->setStatus(inPoll);
         update(EPOLL_CTL_ADD,channel);

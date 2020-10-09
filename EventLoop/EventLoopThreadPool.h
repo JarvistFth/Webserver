@@ -23,7 +23,7 @@ private:
     std::vector<EventLoop*> loops;
 
 public:
-    EventLoopThreadPool(EventLoop* baseloop);
+    explicit EventLoopThreadPool(EventLoop* baseloop);
     EventLoopThreadPool(EventLoop* baseloop,int);
     ~EventLoopThreadPool();
 

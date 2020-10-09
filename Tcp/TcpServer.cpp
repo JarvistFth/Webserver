@@ -60,7 +60,13 @@ started(false),nextConnId(0),threadPool(new EventLoopThreadPool(loop,tNums)),thr
 }
 
 TcpServer::~TcpServer() {
+    loop_->assertInLoopThread();
 
+    for(auto &it:connections){
+        TcpConnectionPtr conn (it.second);
+        it.second.reset();
+        conn->getloop()->runInLoop(std::bind(&TcpConnection::connDestroyed,conn));
+    }
 }
 
 void TcpServer::start() {
@@ -95,18 +101,18 @@ void TcpServer::newConnection(int sockfd, const INetAddress &peerAddr) {
 }
 
 void TcpServer::removeConnection(const TcpConnectionPtr &conn) {
-    LOG_INFO << loop_->getThreadIDString(loop_->threadID) <<"remove conn";
+//    LOG_INFO << loop_->getThreadIDString(loop_->threadID) <<"remove conn";
     loop_->runInLoop(std::bind(&TcpServer::removeConnectionInLoop,this,conn));
 }
 
 void TcpServer::removeConnectionInLoop(const TcpConnectionPtr &conn) {
     loop_->assertInLoopThread();
     auto n = connections.erase(conn->getName());
-    LOG_INFO<< loop_->getThreadIDString(loop_->threadID) <<" map erase n:" <<n;
+//    LOG_INFO<< loop_->getThreadIDString(loop_->threadID) <<" map erase n:" <<n;
     assert(n == 1);
 
     EventLoop* ioLoop = conn->getloop();
-    LOG_INFO<<loop_->getThreadIDString(loop_->threadID) << "remove conn from: "<< conn->getName() << ".  ConnMap Size:" << connections.size();
+//    LOG_INFO<<loop_->getThreadIDString(loop_->threadID) << "remove conn from: "<< conn->getName() << ".  ConnMap Size:" << connections.size();
     ioLoop->queueInLoop(std::bind(&TcpConnection::connDestroyed,conn));
 }
 

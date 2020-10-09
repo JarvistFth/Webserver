@@ -30,6 +30,7 @@ public:
 
   // 设置地址重用
   void setReuseAddr(bool on);
+  void setReusePort(bool on);
 
   void shutdownWrite();
 

@@ -42,10 +42,10 @@ void readTimerfd(int timerfd, TimeStamp now)
 {
     uint64_t howmany;
     ssize_t n = ::read(timerfd, &howmany, sizeof howmany);
-    std::cout << "TimerManager::handleRead() " << howmany << " at " << now.toFormattedString(true)<<std::endl;
+//    LOG_INFO  << "TimerManager::handleRead() " << howmany << " at " << now.toFormattedString(true);
     if (n != sizeof howmany)
     {
-        std::cerr<< "TimerManager::handleRead() reads " << n << " bytes instead of 8";
+        LOG_ERROR<< "TimerManager::handleRead() reads " << n << " bytes instead of 8";
     }
 }
 
@@ -124,6 +124,7 @@ bool TimerManager::insert(const std::shared_ptr<Timer>& timer) {
 
 void TimerManager::handleRead() {
     TimeStamp now(TimeStamp::now());
+//    LOG_INFO << loop->getThreadIDString(loop->threadID) <<" handle read";
     readTimerfd(timerfd,now);
     std::vector<TimerPair> expiredTimers = getExpired(now);
     callingExpiredTimers = true;

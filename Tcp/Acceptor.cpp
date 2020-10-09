@@ -20,6 +20,7 @@ Acceptor::Acceptor(EventLoop *loop, const INetAddress &listenAddr): acceptorLoop
 acceptSocket(sockets::createNonblockingOrDie()),acceptChannel(loop,acceptSocket.fd()),listening(false)
 {
     acceptSocket.setReuseAddr(true);
+    acceptSocket.setReusePort(true);
     acceptSocket.bindAddress(listenAddr);
     acceptChannel.setReadCallback(std::bind(&Acceptor::handleRead,this));
 }
@@ -52,6 +53,9 @@ void Acceptor::handleRead() {
         }else{
             break;
         }
+#ifdef USE_EPOLL_LT
+        break;
+#endif
     }
 }
 

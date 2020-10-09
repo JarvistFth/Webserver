@@ -38,6 +38,8 @@ void Socket::setReuseAddr(bool on) {
   ::setsockopt(sockfd_, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof optval);
 }
 
+
+
 void Socket::shutdownWrite() { sockets::shutdownWrite(sockfd_); }
 
 // 都是设置套接字的功能 setTcpNoDelay和setKeepAlive
@@ -51,4 +53,12 @@ void Socket::setKeepAlive(bool on) {
   int optval = on ? 1 : 0;
   ::setsockopt(sockfd_, SOL_SOCKET, SO_KEEPALIVE, &optval,
                static_cast<socklen_t>(sizeof optval));
+}
+
+void Socket::setReusePort(bool on) {
+    int optval = on?1:0;
+    int ret  = ::setsockopt(sockfd_,SOL_SOCKET,SO_REUSEPORT,&optval, static_cast<socklen_t > (sizeof(optval)));
+    if(ret < 0 && on){
+        LOG_ERROR << "set reuse port error";
+    }
 }

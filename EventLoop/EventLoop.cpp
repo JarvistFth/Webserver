@@ -40,6 +40,7 @@ void EventLoop::loop() {
             channel->handleEvent(retTime);
         }
         doPendingFunctors();
+
     }
     looping = false;
 }

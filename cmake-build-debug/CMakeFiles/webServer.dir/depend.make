@@ -31,14 +31,21 @@ CMakeFiles/webServer.dir/Epoll/Channel.cpp.o: ../Timer/Timer.h
 CMakeFiles/webServer.dir/Epoll/Channel.cpp.o: ../Timer/TimerManager.h
 CMakeFiles/webServer.dir/Epoll/Channel.cpp.o: ../Utils/TimeStamp.h
 
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Base/Buffer.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Base/Copyable.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Base/CountDownLatch.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Base/FixedBuffer.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Base/NonCopyable.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Base/Types.h
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Http/HttpContext.h
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Http/HttpRequest.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Log/AsyncLogging.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Log/LogStream.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Log/Logger.h
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Tcp/INetAddress.h
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Tcp/Socket.h
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Tcp/TcpConnection.h
+CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Utils/Callbacks.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Utils/TimeStamp.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Epoll/Channel.h
 CMakeFiles/webServer.dir/Epoll/Epoller.cpp.o: ../Epoll/Epoller.cpp
@@ -238,6 +245,7 @@ CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Tcp/Socket.h
 CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Tcp/SocketsOps.h
 CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Tcp/TcpConnection.cpp
 CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Tcp/TcpConnection.h
+CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Tcp/TcpServer.h
 CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Timer/Timer.h
 CMakeFiles/webServer.dir/Tcp/TcpConnection.cpp.o: ../Timer/TimerManager.h
 

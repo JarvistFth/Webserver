@@ -34,6 +34,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DUSE_EPOLL_LT"/>
+					<Add option="-DSTD_LOGGING"/>
 					<Add directory="/home/jarvist/CLionProjects/webServer/Base"/>
 					<Add directory="/home/jarvist/CLionProjects/webServer/Log"/>
 					<Add directory="/home/jarvist/CLionProjects/webServer/Utils"/>
@@ -64,6 +66,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DUSE_EPOLL_LT"/>
+					<Add option="-DSTD_LOGGING"/>
 					<Add directory="/home/jarvist/CLionProjects/webServer/Base"/>
 					<Add directory="/home/jarvist/CLionProjects/webServer/Log"/>
 					<Add directory="/home/jarvist/CLionProjects/webServer/Utils"/>

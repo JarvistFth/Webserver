@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -g   -std=gnu++14
 
-CXX_DEFINES = 
+CXX_DEFINES = -DSTD_LOGGING -DUSE_EPOLL_LT
 
 CXX_INCLUDES = -I/home/jarvist/CLionProjects/webServer/Base -I/home/jarvist/CLionProjects/webServer/Log -I/home/jarvist/CLionProjects/webServer/Utils -I/home/jarvist/CLionProjects/webServer/Http -I/home/jarvist/CLionProjects/webServer/EventLoop -I/home/jarvist/CLionProjects/webServer/Tcp -I/home/jarvist/CLionProjects/webServer/Timer 
 

@@ -10,6 +10,7 @@ std::string Logger::logFileName = "/home/jarvist/WebServer.log";
 static AsyncLogging* asyncLogging;
 //std::unique_ptr<AsyncLogging> Logger::asyncLogging = std::make_unique<AsyncLogging>(Logger::getLogFileName());
 static std::once_flag initflag;
+void defaultOutput(const char* msg, size_t len);
 
 const char* LogLevelName[5]={
         "[DEBUG] ",
@@ -42,7 +43,11 @@ void defaultFlush()
 {
     fflush(stdout);
 }
+#ifdef STD_LOGGING
+Logger::OutputFunc g_output = defaultOutput;
+#else
 Logger::OutputFunc g_output = output;
+#endif
 Logger::FlushFunc g_flush = defaultFlush;
 
 Logger::Logger(const char *filename, int line, LOG_LEVEL level):filename(filename),line(line),level(level) {

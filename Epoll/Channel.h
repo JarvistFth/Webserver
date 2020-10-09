@@ -110,6 +110,13 @@ public:
         update();
     };
 
+#ifdef USE_EPOLL_LT
+#else
+    void enableEpollET(){
+        event |= EPOLLET;
+        update();
+    }
+#endif
 };
 
 

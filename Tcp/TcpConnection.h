@@ -28,7 +28,6 @@ private:
     };
 
     TcpConnState state;
-    bool faultError;
 
     void handleRead(TimeStamp recvTime);
     void handleWrite();
@@ -49,11 +48,19 @@ private:
     OnMessageCallback onMessageCallback;
     WriteCompleteCallback writeCompleteCallback;
     CloseCallback closeCallback;
+public:
+    const CloseCallback &getCloseCallback() const;
+
+private:
 
     Buffer inputBuffer;
     Buffer outputBuffer;
 
     HttpContext httpContext;
+#ifdef USE_EPOLL_LT
+#else
+    ssize_t writeET(int fd, const char* begin, size_t len);
+#endif
 
 public:
     TcpConnection(EventLoop* loop, const std::string& name,int sockfd,
@@ -78,12 +85,15 @@ public:
     }
 
     void send(const std::string& msg);
+    void send(Buffer* msg);
     void sendInLoop(const std::string& msg);
+    void sendInLoop(const void* msg,size_t len);
     void shutdown();
 
     void setTcpNoDelay(bool on);
     void setTcpKeepAlive(bool on);
     bool isConnected(){return state == connected;}
+    bool keepAlive;
 
     HttpContext* getHttpContext()  {
         return &httpContext;

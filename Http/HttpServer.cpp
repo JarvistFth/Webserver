@@ -76,8 +76,12 @@ void HttpServer::onHttpRequest(const TcpConnectionPtr &conn, const HttpRequest &
     response.appendToBuffer(&buf);
     string tmp = buf.retrieveAsString();
     conn->send(tmp);
+//    conn->send(&buf);
     if(response.isCloseConnection()){
         conn->shutdown();
+    }
+    else{
+        conn->setTcpKeepAlive(true);
     }
 }
 

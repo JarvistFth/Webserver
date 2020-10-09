@@ -49,7 +49,7 @@ private:
 
     void newConnection(int sockfd, const INetAddress& peerAddr);
     void removeConnection(const TcpConnectionPtr& conn);
-    void removeConnectionInLoop(const TcpConnectionPtr& conn);
+
 
 public:
     TcpServer(EventLoop* loop, const INetAddress& listenAddr,int tNums);
@@ -75,7 +75,7 @@ public:
 
     void start();
 
-
+    void removeConnectionInLoop(const TcpConnectionPtr& conn);
 };
 
 
